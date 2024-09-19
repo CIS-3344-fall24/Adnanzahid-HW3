@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> </head>
+
+    <Title>Register</Title>
+    </head>
+    <body>
+        <form action="./success.html" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength=8 required>
+        <br>
+        <br>
+        <label for="phoneno">Phone Number (Optional):</label>
+        <input type="tel" id="phoneno" name="phoneno">
+        <br>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99" required>
+        <br>
+        <br>
+        <div class="radiobox_section">
+        <label for="gender">Gender:</label>
+        <br>
+        <input type="radio" id="gender" name="gender">
+        <label for="gender">Male</label>
+        <br>
+        <input type="radio" id="gender" name="gender">
+        <label for="gender">Female</label>
+        <br>
+        <input type="radio" id="gender" name="gender">
+        <label for="gender">Other</label>
+        </div>
+        <br>
+        <br>
+        <label for="ticket">Select your ticket:</label>
+        <select name="ticket" id="options" placeholder="Regular">
+            <option value="option1">Regular</option>
+            <option value="option1">VIP</option>
+            <option value="option1">Student</option>    
+        </select>
+        <br>
+        <br>
+        <label for="checkbox">Accept Terms and Conditions:</label>
+        <input type="checkbox" id="checkbox" name="checkbox" required>
+        <br>
+        <br>
+        <input class="submit-button" type="submit"></input>
+    </form>
+    </body>
+</html>
